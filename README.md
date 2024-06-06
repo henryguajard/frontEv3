@@ -31,8 +31,9 @@ Lo que realizamos a lo largo del proyecto fue lo siguiente: :open_book:
 - CSS
 - PHP
 - GIT
+- GITHUB
 - JAVASCRIPT
-- SWEETALERT
+
 ### :closed_book: Framework o librerias:
  - BOOTSTRAP 5
  - SWEETALERT
