@@ -7,7 +7,7 @@
 ![](https://github.com/henryguajard/frontEv3/blob/main/image/imageReadme/energy4.png)
 
 <p align="center">
-  <img src="https://github.com/henryguajard/frontEv3/blob/main/image/imageReadme/energy5.png" alt="Energy 5" width="300"/>
-  <img src="https://github.com/henryguajard/frontEv3/blob/main/image/imageReadme/energy6.png" alt="Energy 6" width="300"/>
-  <img src="https://github.com/henryguajard/frontEv3/blob/main/image/imageReadme/energy7.png" alt="Energy 7" width="300"/>
+  <img src="https://github.com/henryguajard/frontEv3/blob/main/image/imageReadme/energy5.png" alt="Energy 5" width="200"/>
+  <img src="https://github.com/henryguajard/frontEv3/blob/main/image/imageReadme/energy6.png" alt="Energy 6" width="200"/>
+  <img src="https://github.com/henryguajard/frontEv3/blob/main/image/imageReadme/energy7.png" alt="Energy 7" width="200"/>
 </p>
