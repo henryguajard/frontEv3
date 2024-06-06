@@ -39,3 +39,31 @@ Lo que realizamos a lo largo del proyecto fue lo siguiente: :open_book:
  - SWEETALERT
  ### :closed_book: Consumo de APIS:
  - google reCaptcha
+### :closed_book: Para crear el formulario lo isimos de la siguente manera:
+
+ <form id="contactForm" action="?" method="POST" class="col-md-6 ml-5 form-group mb-3 p-4 rounded bg-form">
+    <div>
+        <h4 class="text-center">Formulario de contacto.</h4>
+        <div class="form-floating mb-3 pb-4">
+            <input type="text" class="form-control" id="fi_nombre" placeholder="Ingrese su nombre" required>
+            <label for="fi_nombre">Nombre</label>
+        </div>
+        <div class="form-floating mb-3 pb-4">
+            <select class="form-select" id="fs_servicios" aria-label="Servicios" required>
+                <option value="0" selected>Seleccione un servicio</option>
+                <option value="1">Aire Acondicionado</option>
+                <option value="2">Grupo electrógeno</option>
+                <option value="3">Sala de Calderas</option>
+                <option value="4">Sala de Bombas</option>
+            </select>
+            <label for="fs_servicios">Seleccione un servicio</label>
+        </div>
+        <div class="form-floating mb-3 pb-4">
+            <textarea class="form-control" placeholder="Deje un mensaje aquí" id="fta_mensaje" required></textarea>
+            <label for="fta_mensaje">Mensaje</label>
+        </div>
+        
+        <div class="g-recaptcha mb-3" data-sitekey="6Ldg1_EpAAAAAB7epWwKjVacxu22UStEJWijBmqv"></div>
+        <button type="submit" value="Submit" class="btn btn-primary form-control">Enviar</button>
+    </div>
+</form>
