@@ -40,6 +40,7 @@ Lo que realizamos a lo largo del proyecto fue lo siguiente: :open_book:
  ### :closed_book: Consumo de APIS:
  - google reCaptcha
 ### :closed_book: Para crear el formulario lo isimos de la siguente manera:
+### :closed_book: y lo validamos de la siguente manera:
 ```html
 <form id="contactForm" action="?" method="POST" class="col-md-6 ml-5 form-group mb-3 p-4 rounded bg-form">
     <div>
@@ -67,5 +68,80 @@ Lo que realizamos a lo largo del proyecto fue lo siguiente: :open_book:
         <button type="submit" value="Submit" class="btn btn-primary form-control">Enviar</button>
     </div>
 </form>
+
+// funcion validar formulario 
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevenir el envío del formulario por defecto
+    validarFormulario();
+});
+
+function validarFormulario() {
+    let validos = true; // Cambiar a true inicialmente
+    const input_nombre = document.getElementById('fi_nombre');
+    const select_servicios = document.getElementById('fs_servicios');
+    const textArea_mensaje = document.getElementById('fta_mensaje');
+    const check_envio = document.getElementById('checkEnvio');
+    const recaptchaResponse = grecaptcha.getResponse();
+
+    // Validar campo nombre
+    if (input_nombre.value.trim() === '') {
+        input_nombre.classList.add('is-invalid');
+        validos = false;
+    } else {
+        input_nombre.classList.remove('is-invalid');
+        input_nombre.classList.add('is-valid');
+    }
+
+    // Validar campo servicios
+    if (select_servicios.value === '0') {
+        select_servicios.classList.add('is-invalid');
+        validos = false;
+    } else {
+        select_servicios.classList.remove('is-invalid');
+        select_servicios.classList.add('is-valid');
+    }
+
+    // Validar campo mensaje
+    if (textArea_mensaje.value.trim() === '') {
+        textArea_mensaje.classList.add('is-invalid');
+        validos = false;
+    } else {
+        textArea_mensaje.classList.remove('is-invalid');
+        textArea_mensaje.classList.add('is-valid');
+    }
+
+    // Validar campo checkbox
+   
+
+   // Validación del reCAPTCHA
+   if (recaptchaResponse.length === 0) {
+    Swal.fire({
+        icon: 'error',
+        title: 'Error en reCAPTCHA',
+        text: 'Por favor, completa el reCAPTCHA.'
+    });
+    validos = false;
+}
+
+// Si todos los campos son válidos, mostrar mensaje de éxito
+if (validos) {
+    Swal.fire({
+        icon: 'success',
+        title: 'Formulario enviado',
+        text: 'Su mensaje ha sido enviado exitosamente.'
+    }).then(() => {
+        document.getElementById('contactForm').submit(); // Enviar el formulario después de la validación
+    });
+} else {
+    Swal.fire({
+        icon: 'error',
+        title: 'Error en el formulario',
+        text: 'Por favor, complete todos los campos correctamente.'
+    });
+}
+
+
+
+}
  
 
