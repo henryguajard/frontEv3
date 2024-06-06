@@ -40,8 +40,8 @@ Lo que realizamos a lo largo del proyecto fue lo siguiente: :open_book:
  ### :closed_book: Consumo de APIS:
  - google reCaptcha
 ### :closed_book: Para crear el formulario lo isimos de la siguente manera:
-
- <form id="contactForm" action="?" method="POST" class="col-md-6 ml-5 form-group mb-3 p-4 rounded bg-form">
+```html
+<form id="contactForm" action="?" method="POST" class="col-md-6 ml-5 form-group mb-3 p-4 rounded bg-form">
     <div>
         <h4 class="text-center">Formulario de contacto.</h4>
         <div class="form-floating mb-3 pb-4">
@@ -67,3 +67,5 @@ Lo que realizamos a lo largo del proyecto fue lo siguiente: :open_book:
         <button type="submit" value="Submit" class="btn btn-primary form-control">Enviar</button>
     </div>
 </form>
+ 
+
