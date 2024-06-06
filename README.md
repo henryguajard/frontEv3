@@ -11,3 +11,30 @@
   <img src="https://github.com/henryguajard/frontEv3/blob/main/image/imageReadme/energy6.png" alt="Energy 6" width="200"/>
   <img src="https://github.com/henryguajard/frontEv3/blob/main/image/imageReadme/energy7.png" alt="Energy 7" width="200"/>
 </p>
+
+ Este proyecto correguimos un sitio web llamado Energy and water, el cual necesitaba ser reestructurado y mejorado en su totalidad. Ahora es dinamico y amigable con el usuario.
+Lo que realizamos a lo largo del proyecto fue lo siguiente: :open_book:
+
+- Diseñar y crear un componente de tarjeta de servicio reutilizable con el framework. Este componente debe incluir una imagen, título, descripción y un botón de "contáctanos" lo lleva al formulario de contacto, rellenando el campo “servicio” por el seleccionado.
+- Implementar un componente de carrusel de testimonios con el framewoek que se adapte tanto a dispositivos móviles como a escritorio, considerando la accesibilidad y la usabilidad.
+- Integrar un sistema de gestión de contenido (CMS) con la landing page creada con el framework, asegurando que los componentes diseñados sean fáciles de administrar por el equipo de contenido. Puede trabajar con la herramienta Postman para administrar el contenido.
+- Redactar una guía de buenas prácticas para el desarrollo con el framework, que incluya convenciones de nomenclatura, estructura de archivos y uso de variables, y recomendaciones para garantizar la accesibilidad y la usabilidad.
+-Utilizar Git y GitHub para gestionar el desarrollo colaborativo de la landing page, creando ramas para cada funcionalidad, realizando revisiones de código (pull requests) y documentando los cambios en cada commit. Incluya en el archivo readme.
+- Diseñar e implementar una navegación interactiva y un formulario de contacto en la landing page utilizando componentes del framework, asegurando que sean intuitivos y centrados en el usuario.
+-Optimizar el rendimiento de la landing page asegurando que las imágenes estén comprimidas y se carguen de manera eficiente.
+-Incorporar JavaScript para gestionar la interactividad avanzada en la landing page, utilizando componentes externos del framework para el diseño visual.
+- Implementar las secciones “nosotros”, “servicios” y “preguntas frecuentes” en la landing page que consuma datos de una API (interna o externa) y los muestre dinámicamente utilizando el framework para el diseño.
+-Asegurar que todos los formularios de la landing page (contacto) incluyan medidas de seguridad como validación del lado del cliente y del servidor, y protección contra ataques de robots
+- Organizar y liderar una sesión de retrospectiva con el equipo de desarrollo para identificar áreas de mejora en el uso del framework y la gestión del proyecto, y proponer un plan de acción para la próxima iteración del desarrollo.
+### :closed_book: tecnologias utilizadas:
+- HTML5
+- CSS
+- PHP
+- GIT
+- JAVASCRIPT
+- SWEETALERT
+### :closed_book: Framework o librerias:
+ - BOOTSTRAP 5
+ - SWEETALERT
+ ### :closed_book: Consumo de APIS:
+ - google reCaptcha
